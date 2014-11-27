@@ -1,0 +1,9 @@
+{
+  "name": "bridger",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bridger.js"
+  },
+  "dependencies": {}
+}
