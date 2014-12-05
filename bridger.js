@@ -9,19 +9,25 @@ var aRank = ["2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"];
 // Class Card ...
 //-------------------------------------------------------
 var oCard = {
-	suit: '',
-	rank: '',
-	get_Suit: function() {
-		return this.suit;
+	sSuit: '',
+	sRank: '',
+	GetSuit: function() {
+		return this.sSuit;
 	},
-	set_Suit: function(s) {
-		this.suit = s;
+	SetSuit: function(s) {
+		aux = s.toUpperCase();
+		if(aSuits.indexOf(aux) >= 0) {
+			this.sSuit = aux;
+		}
 	},
-	get_Rank: function() {
-		return this.rank;
+	GetRank: function() {
+		return this.sRank;
 	},
-	set_Rank: function(r) {
-		this.rank = r;
+	SetRank: function(r) {
+		aux = r.toUpperCase();
+		if(aRank.indexOf(aux) >= 0){
+			this.sRank = aux;
+		}
 	}
 };
 
